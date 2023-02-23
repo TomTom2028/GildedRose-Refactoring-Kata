@@ -30,7 +30,7 @@ export class GildedRose {
   }
 
   private static isConjured(item: Item) {
-    return item.name === 'Conjured';
+    return item.name.includes('Conjured');
   }
   private static hasSellDataPassed(item: Item) {
     return item.sellIn < 0;
